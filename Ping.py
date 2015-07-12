@@ -1,4 +1,5 @@
 __author__ = 'Hwaipy'
+__version__= '1.0.0'
 
 import sys
 from PyQt5.QtWidgets import QTableWidget, QAction, QMainWindow, QAbstractItemView, QTableWidgetItem, QDesktopWidget, \
@@ -98,7 +99,6 @@ class Example(QMainWindow):
         for i in range(results.__len__()):
             self.table.setItem(index, i + 1, QTableWidgetItem(results[i]))
         if (pingProcess.finished()):
-            print("{} finished.".format(pingProcess.index))
             if (self.actionPingProcessed.__contains__(pingProcess)):
                 self.actionPingProcessed.remove(pingProcess)
             if (self.actionPingProcessed.__len__() == 0):
