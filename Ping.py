@@ -60,7 +60,7 @@ class Example(QMainWindow):
         # Set main window
         self.setCentralWidget(self.table)
         self.setGeometry(300, 300, 700, 500)
-        self.setWindowTitle('Review')
+        self.setWindowTitle('Ping')
         self.centering()
         self.show()
 
